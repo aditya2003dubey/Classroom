@@ -1,0 +1,15 @@
+.table{
+    width: 90vw;
+    margin: 2rem;
+}
+.btns{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+}
+.btns .btn{
+    margin-right: 2rem;
+}
+.btns input{
+    width: 10rem;
+}

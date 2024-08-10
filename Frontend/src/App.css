@@ -1,0 +1,37 @@
+body{
+    width: 100vw;
+}
+.carding{
+    /* width: 100vw; */
+}
+.classrooms{
+    display: flex;
+    justify-content: space-between;
+}
+
+.student-classroom{
+    flex: 2;
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+.carding{
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    margin: 1rem;
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+}
+.student-list{
+    flex: 4;
+    margin-left: 2rem;
+    width: 60vw;
+}
+header h2{
+    color: white;
+    margin-left: 8rem;
+}
+header .user-info{
+    color: white;
+}
