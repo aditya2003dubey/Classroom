@@ -37,7 +37,7 @@ function teachers_list() {
 
     useEffect(() => {
         async function data (){
-        let newData = await fetch ("http://localhost:3000/teachers_list");
+        let newData = await fetch ("https://classroom-backend-j53v.onrender.com/teachers_list");
         let res = await newData.json();
         setRecords(res);
         }

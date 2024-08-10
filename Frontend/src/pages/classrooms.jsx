@@ -50,7 +50,7 @@ function classrooms() {
     } = useForm()
 
     async function onSubmit(data) {
-        const result = await fetch(`http://localhost:3000/add_student/${id}`, {
+        const result = await fetch(`https://classroom-backend-j53v.onrender.com/add_student/${id}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -65,7 +65,7 @@ function classrooms() {
 
     useEffect(() => {
         async function data() {
-            let newData = await fetch("http://localhost:3000/classrooms");
+            let newData = await fetch("https://classroom-backend-j53v.onrender.com/classrooms");
             let res = await newData.json();
             setClasse(res);
             console.log(res);
@@ -80,7 +80,7 @@ function classrooms() {
     // }
 
     async function calling(e) {
-        let newData = await fetch(`http://localhost:3000/classroom/${e}`);
+        let newData = await fetch(`https://classroom-backend-j53v.onrender.com/classroom/${e}`);
         let res = await newData.json();
         setRecords(res);
         setId(e);

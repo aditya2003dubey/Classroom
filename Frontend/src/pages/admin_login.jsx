@@ -14,7 +14,7 @@ function admin_login() {
 
   async function onSubmit (data){
     console.log(data)
-    const result = await fetch ("http://localhost:3000/admin_login",{
+    const result = await fetch ("https://classroom-backend-j53v.onrender.com/admin_login",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -12,7 +12,7 @@ function add_teacher() {
 
   async function onSubmit (data){
     console.log(data)
-    const result = await fetch ("http://localhost:3000/add_teacher",{
+    const result = await fetch ("https://classroom-backend-j53v.onrender.com/add_teacher",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
